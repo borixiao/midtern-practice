@@ -1,0 +1,240 @@
+html{
+    box-sizing: border-box;
+    background-image: url("https://i.pinimg.com/736x/fd/46/1b/fd461b33c632837344750e38ed1c8aca.jpg");
+    background-size: contain;
+    background-attachment: fixed;   
+    /* background-color: antiquewhite; */
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    font-size: 87%;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/* 設定網頁大小 */
+.container{
+    max-width: 1200px;
+    /* height: 1653px; */
+    margin: 0 auto;
+    background-image: url("https://i.pinimg.com/564x/8f/c9/25/8fc925150eae143e15c0f95c41c39cb4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    /* padding-top: 100px; */
+}
+/* header */
+.header{
+    width: 1200px;
+    font-size: 1.2rem;
+    background-color:transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    transition: all .5s ease-out;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.header-content >a{
+    display: block;
+    width: 30%;
+    margin-left: 20px;
+}
+.header-logo{
+    width: 100%;
+}
+.header-title{
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(245, 94, 94);
+}
+.header-title-slogan{
+    font-size: 0.9em;
+    color: rgb(250, 128, 128);
+    font-weight: 500;
+}
+/* nav */
+.nav{
+    margin-right: 10px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right:20px;
+}
+.nav-link{
+    display: block;
+    color:white;
+    text-shadow:black 0.1em 0.1em 0.2em;
+    text-decoration: none;
+}
+/* banner */
+.position-container{
+    position: relative;
+}
+.banner{
+    width: 100%;    
+    position: absolute;
+    /* z-index: 1; */
+}
+.banner >img{
+    width: 100%;
+}
+.article{
+    width: 50%;
+    font-size: 1rem;
+    bottom: -300px;
+    position: relative;
+    /* z-index: 2; */
+    left: 140px;
+}
+.article-title{
+    font-weight: 500;
+    color: rgb(37, 37, 37);
+    margin-bottom: 5px;
+}
+.article-price{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.article-button-box{
+    width: 37%;
+    background-color: rgb(0, 71, 50);/*這裡有換顏色*/
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 8px;
+    padding: 8px 0;
+    transition:all .3s ease;
+}
+.article-button-box:hover{
+    cursor: pointer;
+    background-color: rgb(0, 114, 117);
+}
+.article-content-area{
+    margin-top: 20px;
+}
+.article-content-area >h2{
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+}
+.article-content-area >p{
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: rgb(27, 27, 27);
+    /* letter-spacing: 1.1px; */
+}
+.article-hide-content{
+    text-align: center;
+    font-size: 1.1em;
+    color: gray;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    animation: animate 2s infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(0,10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+.article-toggler{
+    width: 77%;
+    font-size:1.1rem ;
+    margin: 0 auto;
+    display: none;
+    color: rgb(27, 27, 27);
+    line-height: 1.5;
+}
+.article-active{
+    display: block;
+}
+.section-title{
+    margin-top: 35px;
+}
+.section-area{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.section-box{
+    width: 25%;
+    margin-right: 28px;
+    box-shadow: 0px 3px 9px rgb(36, 35, 35) ;
+    overflow: hidden;
+    border-radius:5px;
+}
+.section-area .section-box>img{
+    width: 100%;
+    display: block;
+    /* margin-bottom:15px ; */
+    
+}
+.section-area-img{
+    margin-left: 28px;
+}
+.section-button{
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 3px;
+    padding: 12px 0;
+    background-color: rgb(0, 78, 42);/*這裡有換色*/
+    color: white;
+}
+/* footer */
+.footer{
+    width: 100%;
+    background-color: rgb(133, 197, 176);
+    font-size: 1.01rem;
+    
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+.footer-list{
+    list-style: none;
+    padding-top: 50px;
+}
+.footer-item{
+    margin-top: 7px;
+}
+.footer-link{
+    text-decoration: none;
+    color:rgb(23, 16, 92) ;
+}
+.footer-infrolist{
+    list-style: none;
+    padding-top: 50px;
+}
+.footer-icon-flex{
+    display: flex;
+    margin-top: 2px;
+}
+.footer-icon-flex .footer-link{
+    margin-right: 8px;
+}
+.footer-icon-flex .footer-link >i{
+    font-size: 1.5em;
+}
